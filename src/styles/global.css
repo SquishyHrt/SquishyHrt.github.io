@@ -1,27 +1,27 @@
 /* Global variables */
 :root {
 	/* Colors */
-	--gray-0: #090b11;
-	--gray-50: #141925;
-	--gray-100: #283044;
-	--gray-200: #3d4663;
-	--gray-300: #505d84;
-	--gray-400: #6474a2;
-	--gray-500: #8490b5;
-	--gray-600: #a3acc8;
-	--gray-700: #c3cadb;
-	--gray-800: #e3e6ee;
-	--gray-900: #f3f4f7;
-	--gray-999-basis: 0, 0%, 100%;
+	--gray-0: #0d1a2d; /* Darkest - Used for strong text/headings */
+	--gray-50: #1a3459;
+	--gray-100: #2c4a7e;
+	--gray-200: #556f9a; /* Main body text */
+	--gray-300: #7e8da9;
+	--gray-400: #a4adc2;
+	--gray-500: #c9cedb;
+	--gray-600: #e0e3e9;
+	--gray-700: #f0f1f4;
+	--gray-800: #f7f8f9;
+	--gray-900: #ffffff; /* Card Backgrounds */
+	--gray-999-basis: 0, 0%, 98%; /* HSL value for main background */
 	--gray-999_40: hsla(var(--gray-999-basis), 0.4);
-	--gray-999: #ffffff;
+	--gray-999: #f9f7f3; /* Main Page Background - a warm, soft beige/white */
 
-	--accent-light: #c561f6;
-	--accent-regular: #7611a6;
-	--accent-dark: #1c0056;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
+	--accent-light: #4c82f7; /* Lighter blue for gradients/hovers */
+	--accent-regular: #1e63f5; /* Primary accent for links and buttons */
+	--accent-dark: #0b45c2; /* Darker blue for emphasis */
+	--accent-overlay: hsla(217, 91%, 55%, 0.1);
 	--accent-subtle-overlay: var(--accent-overlay);
-	--accent-text-over: var(--gray-999);
+	--accent-text-over: var(--gray-999); /* Text on top of accent colors (e.g., in a button) */
 
 	--link-color: var(--accent-regular);
 
@@ -78,30 +78,32 @@
 }
 
 :root.theme-dark {
-	--gray-0: #ffffff;
-	--gray-50: #f3f4f7;
-	--gray-100: #e3e6ee;
-	--gray-200: #c3cadb;
-	--gray-300: #a3acc8;
-	--gray-400: #8490b5;
-	--gray-500: #6474a2;
-	--gray-600: #505d84;
-	--gray-700: #3d4663;
-	--gray-800: #283044;
-	--gray-900: #141925;
-	--gray-999-basis: 225, 31%, 5%;
-	--gray-999: #090b11;
+	--gray-0: #e6f1ff; /* Brightest - Used for strong text/headings */
+	--gray-50: #ccd6f6;
+	--gray-100: #a8b2d1;
+	--gray-200: #8892b0; /* Main body text */
+	--gray-300: #4a5568;
+	--gray-400: #3b465e;
+	--gray-500: #2c3a54;
+	--gray-600: #23324c;
+	--gray-700: #172a46; /* Card backgrounds */
+	--gray-800: #112240;
+	--gray-900: #0a192f; /* Main Page Background - a deep, dark navy */
+	--gray-999-basis: 222, 47%, 11%;
+	--gray-999: #0a192f;
 
-	--accent-light: #1c0056;
-	--accent-regular: #7611a6;
-	--accent-dark: #c561f6;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
-	--accent-subtle-overlay: hsla(281, 81%, 36%, 0.33);
-	--accent-text-over: var(--gray-0);
+	--accent-light: #8fcbff;      /* A lighter sky blue for hover/gradients */
+	--accent-regular: #50a6f2;    /* Primary accent: bright, clear, and very blue */
+	--accent-dark: #1e88e5;       /* A deeper, more saturated blue */
+	--accent-overlay: hsla(207, 90%, 61%, 0.1);
+	--accent-subtle-overlay: hsla(207, 90%, 61%, 0.05); /* Softer hover effect */
+	--accent-text-over: #0a192f;  /* Text on top of accent colors (dark for contrast) */
 
 	--link-color: var(--accent-dark);
 
-	--gradient-stop-1: #4c11c6;
+	--gradient-stop-1: var(--accent-dark);
+	--gradient-stop-2: var(--accent-regular);
+	--gradient-stop-3: var(--accent-light);
 	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);
 	--gradient-accent-orange: linear-gradient(
 		150deg,
